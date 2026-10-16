@@ -1,4 +1,3 @@
-
 def recursive_binary_search(arr, target, low, high):
     if low > high:
         return -1

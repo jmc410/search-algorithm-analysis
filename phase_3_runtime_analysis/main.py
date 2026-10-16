@@ -2,6 +2,10 @@ import random
 import time
 import statistics
 import csv
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from search_algorithms import (
     recursive_binary_search,
@@ -34,7 +38,6 @@ def main():
         print("\nTesting list size:", size)
 
         for trial in range(number_of_trials):
-            # Generate and sorts the list before timing
             values = []
 
             for i in range(size):
@@ -78,7 +81,7 @@ def main():
 
             print("Trial", trial + 1, "of", number_of_trials, "complete")
 
-        # Calculate the median time for each algorithm.
+        # Calculate the median time for each algorithm
         recursive_median = statistics.median(recursive_times)
         iterative_median = statistics.median(iterative_times)
         sequential_median = statistics.median(sequential_times)
@@ -94,10 +97,8 @@ def main():
             round(sequential_median, 2)
         ])
 
-    # Saves the results after all trials have finished.
-    with open("phase_3_runtime_analysis/results.csv",
-              "w", newline="") as file:
-
+    # Saves the results to a CSV file
+    with open("results.csv", "w", newline="") as file:
         writer = csv.writer(file)
 
         writer.writerow([
