@@ -22,8 +22,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="phase_1_basic_testing\main.py" />
+    <Compile Include="phase_1_basic_testing\__init__.py" />
     <Compile Include="phase_2_randomized_testing\main.py" />
+    <Compile Include="phase_2_randomized_testing\__init__.py" />
     <Compile Include="phase_3_runtime_analysis\main.py" />
+    <Compile Include="phase_3_runtime_analysis\results.csv" />
+    <Compile Include="phase_3_runtime_analysis\__init__.py" />
     <Compile Include="search_algorithms.py" />
   </ItemGroup>
   <ItemGroup>
