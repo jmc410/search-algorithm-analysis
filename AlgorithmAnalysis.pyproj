@@ -22,9 +22,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="phase_1_basic_testing\main.py" />
+    <Compile Include="phase_2_randomized_testing\module1.py" />
     <Compile Include="search_algorithms.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="phase_2_randomized_testing\" />
     <Folder Include="phase_1_basic_testing\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
